@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "text":"Books We Have",
+        "Qty":"1,430",
+        "image":"../../asset/homepage/Icon/bgparallax-01.jpg"
+    },
+    {
+        "id":"2",
+        "text":"Total Members",
+        "Qty":"610",
+        "image":"../../asset/homepage/Icon/bgparallax-02.jpg"
+    },
+    {
+        "id":"3",
+        "text":"Happy Users",
+        "Qty":"559",
+        "image":"../../asset/homepage/Icon/bgparallax-03.jpg"
+    }
+]
