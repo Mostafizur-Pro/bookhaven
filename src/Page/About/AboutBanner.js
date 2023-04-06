@@ -3,7 +3,7 @@ import contactImage from "../../asset/contactpage/contactpage.jpg";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 
-const Contactbanner = () => {
+const AboutBanner = () => {
   return (
     <div>
       <div
@@ -13,13 +13,13 @@ const Contactbanner = () => {
         <div className="hero-overlay bg-opacity-80"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Contact Us </h1>
+            <h1 className="mb-5 text-5xl font-bold">About Us </h1>
 
             <div className="flex gap-2 items-center text-white border-orange-400">
               <Link to="/">Home </Link>
 
               <FaAngleRight />
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/about">About Us</Link>
             </div>
           </div>
         </div>
@@ -28,4 +28,4 @@ const Contactbanner = () => {
   );
 };
 
-export default Contactbanner;
+export default AboutBanner;
