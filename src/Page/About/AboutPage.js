@@ -3,6 +3,7 @@ import AboutBanner from "./AboutBanner";
 import KnowMore from "./KnowMore";
 import Template from "./Template";
 import JourneyOfSuccess from "./JourneyOfSuccess";
+import MeetOurPro from "./MeetOurPro";
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
       <KnowMore />
       <Template />
       <JourneyOfSuccess />
+      <MeetOurPro />
     </div>
   );
 };
