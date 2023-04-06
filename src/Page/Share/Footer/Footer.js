@@ -10,7 +10,9 @@ const Footer = () => {
           {" "}
           Book<span className="text-orange-400">haven</span>
         </h1>
-        <p>Providing reliable tech since 1992</p>
+        <p>
+          "Explore the World of Books: Your Gateway to Knowledge - Bookhaven"
+        </p>
       </div>
       <div>
         <span className="footer-title">Services</span>

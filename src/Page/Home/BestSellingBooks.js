@@ -5,7 +5,7 @@ const BestSellingBooks = () => {
     <div className="my-5">
       <div>
         <p>People's Choise</p>
-        <h2 className="text-2xl">Best Selling Books</h2>
+        <h2 className="text-2xl mb-2">Best Selling Books</h2>
       </div>
       <hr />
       <div className="grid grid-cols-4 gap-5">
