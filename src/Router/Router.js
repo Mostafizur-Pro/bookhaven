@@ -5,6 +5,7 @@ import ContactPage from "../Page/Contact/ContactPage";
 import AboutPage from "../Page/About/AboutPage";
 
 import AllCategories from "../Page/AllCategories/AllCategories";
+import Product from "../Page/AllCategories/Product";
 
 const router = createBrowserRouter([
   {
@@ -22,11 +23,18 @@ const router = createBrowserRouter([
       {
         path: "/categories",
         element: <AllCategories />,
-        // loader: ({ params }) =>
-        // fetch(
-        //   `categories.json/categories/${params.name}`
-        // ),
+       
     },
+  //   {
+  //     path: "/categories/:id",
+  //     element: <Product/>,
+     
+  // },
+    {
+      path: "/categories/tantasy",
+      element: <Product/>,
+     
+  },
      
       {
         path: "/contact",

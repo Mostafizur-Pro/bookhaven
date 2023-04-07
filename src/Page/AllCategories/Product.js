@@ -1,30 +1,41 @@
 import React, { useEffect, useState } from 'react';
 import CategoryList from './CategoryList';
-import BookList from './BookList';
+import { Link, useLoaderData } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
 
-
-const AllCategories = () => {
-    // const bookLists = useLoaderData();
-    
-    const [bookLists, setBookList] = useState([]);
-    useEffect(() => {
+const Product = () => {
+    const [categories, setCategories] = useState([])
+  useEffect(() => {
       fetch(
-        "products.json"
+        "categories.json"
       )
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
-          setBookList(data);
+          setCategories(data);
         });
     }, []);
 
-    // console.log("booklists",bookLists);
     return (
         <div>
-           <div>
+            <div>
         <div className="lg:grid lg:grid-cols-12 gap-4 mx-5 sm:none ">
           <div className="col-span-4 lg:col-span-2 mt-5">
-            <CategoryList/>
+            {/* <CategoryList/>
+             */}
+             <div className="text-lg font-semibold">
+        {categories.map((category) => (
+          <p className=" mt-3 uppercase" key={category.id}>
+            <Link
+              className="hover:underline selected"
+              to={`/categories/${category.name}`}
+            >
+              {category.name}
+            </Link>
+            
+          </p>
+        ))}
+      </div>
          
           </div>
           <div className="col-span-8 ls:col-span-9">
@@ -33,12 +44,13 @@ const AllCategories = () => {
               {/* Total Item of Couse: */}
             </h2>
            <div className='grid grid-cols-3 gap-5'>
-           {bookLists.map((bookList) => (
+           {/* {bookLists.map((bookList) => (
               <BookList
                 key={bookList.id}
                 bookItem={bookList}
               ></BookList>
-            ))}
+            ))} */}
+            hi
            </div>
             
           </div>
@@ -48,4 +60,4 @@ const AllCategories = () => {
     );
 };
 
-export default AllCategories;
+export default Product;

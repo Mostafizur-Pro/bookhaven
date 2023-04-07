@@ -4,14 +4,14 @@ const BookList = ({bookItem}) => {
     console.log("bookItem", bookItem);
     const {picture, name, category, price, resalePrice} = bookItem
     return (
-        <div>
+        <div className=' '>
             <section className="mt-4">
           <div className="card w-64  bg-base-100 shadow-xl">
             <figure>
               <img
                 src={picture}
                 alt="Books"
-                className="h-96"
+                className='h-96'
               />
             </figure>
 
@@ -54,9 +54,9 @@ const BookList = ({bookItem}) => {
                 />
               </div>
               <div className="flex">
-                <h3 className="text-xl font-semibold text-green-400">${price}</h3>
+                <h3 className="text-xl font-semibold text-green-400">${resalePrice}</h3>
                 <h3 className="text-lg font-semibold ml-3 line-through text-gray-400">
-                  ${resalePrice}
+                  ${price}
                 </h3>
               </div>
             </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
           All Categories
             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
           </a>
-          <ul className="p-2 bg-gray-300 w-48">
+          <ul className="p-2 bg-gray-300 w-48 z-40 ">
             <li><Link to="/categories/fantasy">Fantasy</Link></li>
             <li><Link to="/categories/westerns">Westerns</Link></li>
             <li><Link to="/categories/thriller">Thriller</Link></li>
@@ -21,9 +21,9 @@ const Navbar = () => {
       {/* <li>
         <Link to="/categories">All Categories</Link>
       </li> */}
-      <li>
+      {/* <li>
         <Link to="/booking">Booking</Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/contact">Contact</Link>
       </li>
