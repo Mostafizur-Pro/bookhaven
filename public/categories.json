@@ -1,0 +1,17 @@
+[
+    {
+        "_id":1,
+        "name":"tantasy",
+        "picture":"https://www.oberlo.com/media/1603897577-image22-1.jpg?w=1824&fit=max"
+    },
+    {
+        "_id":2,
+        "name":"westerns",
+        "picture":"https://i.insider.com/56f2ef6ddd0895fd1d8b4888?width=600&format=jpeg&auto=webp" 
+    },
+    {
+        "_id":3,
+        "name":"thriller",
+        "picture":"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1589302559-41bsvxNUSdL.jpg?crop=1xw:0.987xh;center,top&resize=980:*" 
+    }
+]

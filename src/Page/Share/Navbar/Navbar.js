@@ -7,9 +7,20 @@ const Navbar = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/product">Product</Link>
-      </li>
+      <li tabIndex={0}>
+          <a className="justify-between">
+          All Categories
+            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+          </a>
+          <ul className="p-2 bg-gray-300 w-48">
+            <li><Link to="fantasy">Fantasy</Link></li>
+            <li><Link to="westerns">Westerns</Link></li>
+            <li><Link to="thriller">Thriller</Link></li>
+          </ul>
+        </li>
+      {/* <li>
+        <Link to="/categories">All Categories</Link>
+      </li> */}
       <li>
         <Link to="/booking">Booking</Link>
       </li>
@@ -19,17 +30,8 @@ const Navbar = () => {
       <li>
         <Link to="/about">About</Link>
       </li>
-      {/* <li tabIndex={0}>
-          <a className="justify-between">
-            Parent
-            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-          </a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li> */}
+      
+        
     </>
   );
 
