@@ -22,7 +22,12 @@ const router = createBrowserRouter([
       {
         path: "/categories",
         element: <AllCategories />,
-      },
+        // loader: ({ params }) =>
+        // fetch(
+        //   `categories.json/categories/${params.name}`
+        // ),
+    },
+     
       {
         path: "/contact",
         element: <ContactPage />,
