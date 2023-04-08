@@ -6,11 +6,12 @@ import AboutPage from "../Page/About/AboutPage";
 
 import AllCategories from "../Page/AllCategories/AllCategories";
 import Product from "../Page/AllCategories/Product";
+import ErrorPage from "../Page/Share/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "*",
-    element: <h1>Error Page</h1>,
+    element: <ErrorPage />,
   },
   {
     path: "/",
@@ -23,19 +24,17 @@ const router = createBrowserRouter([
       {
         path: "/categories",
         element: <AllCategories />,
-       
-    },
-  //   {
-  //     path: "/categories/:id",
-  //     element: <Product/>,
-     
-  // },
-    {
-      path: "/categories/tantasy",
-      element: <Product/>,
-     
-  },
-     
+      },
+      //   {
+      //     path: "/categories/:id",
+      //     element: <Product/>,
+
+      // },
+      {
+        path: "/categories/tantasy",
+        element: <Product />,
+      },
+
       {
         path: "/contact",
         element: <ContactPage />,

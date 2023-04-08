@@ -18,9 +18,13 @@ const MeetOurPro = () => {
         <hr />
 
         <section className="flex  justify-between">
-          <div className="card   ">
-            <figure className="px-10 pt-10">
-              <img src={img1} alt="Shoes" className="rounded-xl w-f" />
+          <div className="card relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+            <figure className="px-10 pt-10 ">
+              <img
+                src={img1}
+                alt="Shoes"
+                className="rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Jude Morphew</h2>
@@ -31,9 +35,13 @@ const MeetOurPro = () => {
               </div>
             </div>
           </div>
-          <div className="card  ">
+          <div className="card relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <figure className="px-10 pt-10">
-              <img src={img2} alt="Shoes" className="rounded-xl w-f" />
+              <img
+                src={img2}
+                alt="Shoes"
+                className="rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Book Burger</h2>
@@ -44,9 +52,13 @@ const MeetOurPro = () => {
               </div>
             </div>
           </div>
-          <div className="card  ">
+          <div className="card relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <figure className="px-10 pt-10">
-              <img src={img3} alt="Shoes" className="rounded-xl w-f" />
+              <img
+                src={img3}
+                alt="Shoes"
+                className="rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Book Ship & Co.</h2>
@@ -57,9 +69,13 @@ const MeetOurPro = () => {
               </div>
             </div>
           </div>
-          <div className="card  ">
+          <div className="card relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <figure className="px-10 pt-10">
-              <img src={img4} alt="Shoes" className="rounded-xl w-f" />
+              <img
+                src={img4}
+                alt="Shoes"
+                className="rounded-xl max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Enoch Gallion</h2>
